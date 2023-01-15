@@ -1,0 +1,27 @@
+@import '../../styles/settings.scss';
+
+.background {
+  background-image: url('https://pixabay.com/get/gc4448d9d37bc2e6a5987bac0be2177b6132000f021ff3a22b61aa0f95717f7b83f3d79206274691408eb63e265f4b009e9b407cbd14b0d05e38406f40854bd6e1d2a853558a50608a1e142174ef3e34c_1920.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  margin: 40px 0 40px 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-text-title;
+  letter-spacing: 2px;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}

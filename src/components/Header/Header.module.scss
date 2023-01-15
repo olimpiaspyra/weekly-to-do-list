@@ -1,0 +1,34 @@
+@import '../../styles/settings.scss';
+
+.header {
+  display: grid;
+  place-content: center;
+  background-color: $color-background;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $color-text-title;
+  padding: 15px;
+}
+
+.header > h1 {
+  grid-area: 1/1/-1/-1;
+}
+.titleTop {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+.titleBottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 53%, $color-text-title 65%);
+  background: linear-gradient(177deg, black 53%, $color-text-title 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+}
+
+@media (max-width: 767px) {
+  .header {
+    font-size: 1.5rem;
+  }
+}

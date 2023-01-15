@@ -1,0 +1,18 @@
+@use 'sass:math';
+@import '../../styles/settings.scss';
+
+.column {
+  flex-shrink: 0;
+  width: calc(33% - 12px);
+  background-color: $color-fields;
+  border-radius: 5px;
+  box-shadow: 0 math.div(35px, 4) 0 rgba(0, 0, 0, 0.3);
+  height: 50px;
+  line-height: 3.5;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $color-text-fields;
+}
