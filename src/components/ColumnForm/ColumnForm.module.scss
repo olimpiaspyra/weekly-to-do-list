@@ -1,0 +1,18 @@
+@import '../../styles/settings.scss';
+
+.columnForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.inputTitle {
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: $color-text-title;
+}
+
+

@@ -1,11 +1,11 @@
 @import '../../styles/settings.scss';
 
 .background {
-  background-image: url('https://pixabay.com/get/gc4448d9d37bc2e6a5987bac0be2177b6132000f021ff3a22b61aa0f95717f7b83f3d79206274691408eb63e265f4b009e9b407cbd14b0d05e38406f40854bd6e1d2a853558a50608a1e142174ef3e34c_1920.jpg');
+  background-image: url('https://pixabay.com/get/g0d24941191d01bb5b9d893c5b8d5d3d3b8f5bca6825588fd41c0a5e51d2e2976af5a8e8f4d5254abe528d31c717120a1cb1b40dae1436a13169643ff33e2a7e9548aa082877d7455027a2d41a72f070b_1920.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 250px;
+  height: 220px;
   margin: 40px 0 40px 0;
   overflow: hidden;
   border-radius: 5px;
@@ -19,9 +19,9 @@
   letter-spacing: 2px;
 }
 
-.column {
+.columns {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 15px;
 }

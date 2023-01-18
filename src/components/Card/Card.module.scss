@@ -1,0 +1,12 @@
+@use 'sass:math';
+@import '../../styles/settings.scss';
+
+.card {
+  background-color: $color-fields;
+  border-radius: 5px;
+  margin: 15px;
+  list-style: none;
+  box-shadow: 0 math.div(35px, 4) 0 rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
