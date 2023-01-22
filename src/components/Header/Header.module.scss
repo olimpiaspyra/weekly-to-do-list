@@ -8,7 +8,7 @@
   font-weight: 900;
   text-transform: uppercase;
   color: $color-text-title;
-  padding: 15px;
+  margin: 15px;
 }
 
 .header > h1 {
@@ -25,6 +25,18 @@
   background-clip: text;
   -webkit-background-clip: text;
   transform: translateX(-0.02em);
+}
+
+.background {
+  background-image: url('https://pixabay.com/get/g94f3ecb2e41cc2108ebf16cf535da56db613c7bc7618dfb52963a7235370d00864ef1d4110860f6f6c10631cd674902ede2782f86625adc5c3d8267467b4ee84fdb0d61e3123b89310ade1e0a0565353_1920.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 220px;
+  margin: 40px 0 40px 0;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 1200px
 }
 
 @media (max-width: 767px) {

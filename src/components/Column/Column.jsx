@@ -1,30 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {useSelector} from 'react-redux';
 
 import Card from '../Card/Card';
+import CardForm from '../CardForm/CardForm';
+import {getCardsById} from '../../redux/cardsReducer';
 
 import styles from './Column.module.scss';
-import CardForm from '../CardForm/CardForm';
 
-const Column = ({title, cards, action, id}) => {
+const Column = ({title, id}) => {
+  const cards = useSelector(state => getCardsById(state, id));
+
   return (
     <article className={styles.column}>
       <p className={styles.title}>{title}</p>
       <ul className={styles.cards}>
         {cards.map(card => (
-          <Card key={card.id} {...card} />
+          <Card key={card.id} title={card.title} cardId={card.id} />
         ))}
       </ul>
-      <CardForm action={action} columnId={id} />
+      <CardForm columnId={id} />
     </article>
   );
 };
 
 Column.propTypes = {
   title: PropTypes.string,
-  cards: PropTypes.array,
-  action: PropTypes.func,
-  id: PropTypes.number,
+  id: PropTypes.string,
 };
 
 export default Column;

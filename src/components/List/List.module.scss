@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .background {
-  background-image: url('https://pixabay.com/get/g0d24941191d01bb5b9d893c5b8d5d3d3b8f5bca6825588fd41c0a5e51d2e2976af5a8e8f4d5254abe528d31c717120a1cb1b40dae1436a13169643ff33e2a7e9548aa082877d7455027a2d41a72f070b_1920.jpg');
+  background-image: url('https://pixabay.com/get/g94f3ecb2e41cc2108ebf16cf535da56db613c7bc7618dfb52963a7235370d00864ef1d4110860f6f6c10631cd674902ede2782f86625adc5c3d8267467b4ee84fdb0d61e3123b89310ade1e0a0565353_1920.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,12 +11,21 @@
   border-radius: 5px;
 }
 
-.subtitle {
+.listTitle,
+.listDescription {
   font-size: 2rem;
   font-weight: 700;
-  text-transform: uppercase;
   color: $color-text-title;
   letter-spacing: 2px;
+  padding: 8px;
+}
+
+.listTitle {
+  text-transform: uppercase;
+}
+
+.listDescription {
+  font-size: 1.5rem;
 }
 
 .columns {
@@ -25,3 +34,4 @@
   flex-wrap: wrap;
   margin-top: 15px;
 }
+

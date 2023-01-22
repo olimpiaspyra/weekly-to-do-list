@@ -1,16 +1,17 @@
 import React from 'react';
+import {Routes, Route} from 'react-router-dom';
 
 import Container from './components/Container/Container';
-import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 import List from './components/List/List';
-import Search from './components/Search/Search';
 
 function App() {
   return (
     <Container>
-      <Header />
-      <Search />
-      <List />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/list/:listId' element={<List />} />
+      </Routes>
     </Container>
   );
 }

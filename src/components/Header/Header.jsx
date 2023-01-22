@@ -7,6 +7,7 @@ const Header = () => {
     <div className={styles.header}>
       <h1 className={styles.titleTop}>Weekly to do list</h1>
       <h1 className={styles.titleBottom}>Weekly to do list</h1>
+      <div className={styles.background}></div>
     </div>
   );
 };
