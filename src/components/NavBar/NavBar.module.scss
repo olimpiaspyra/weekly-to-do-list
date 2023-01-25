@@ -1,0 +1,33 @@
+@import '../../styles/settings.scss';
+
+.navbar {
+  background-color: $color-navbar;
+  height: 50px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 200px;
+}
+
+li a {
+  color: $color-text-title;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+.icon {
+  color: $color-text-title;
+  padding: 0 0 0 150px;
+}
+
+.linkActive {
+  color: $color-favorite;
+}

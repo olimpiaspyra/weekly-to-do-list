@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {useDispatch} from 'react-redux';
-import PropTypes from 'prop-types';
 
 import Button from './../Button/Button';
 import TextInput from '../TextInput/TextInput';
@@ -8,14 +7,14 @@ import {addList} from '../../redux/listsReducer';
 
 import styles from './ListForm.module.scss';
 
-const ListForm = ({id}) => {
+const ListForm = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addList({id, title, description}));
+    dispatch(addList({title, description}));
     setTitle('');
     setDescription('');
   };
@@ -39,10 +38,6 @@ const ListForm = ({id}) => {
       <Button className={styles.button}>Add list</Button>
     </form>
   );
-};
-
-ListForm.propTypes = {
-  id: PropTypes.string,
 };
 
 export default ListForm;

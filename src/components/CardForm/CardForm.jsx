@@ -8,13 +8,13 @@ import {addCard} from '../../redux/cardsReducer';
 
 import styles from './CardForm.module.scss';
 
-const CardForm = ({columnId, id}) => {
+const CardForm = ({columnId}) => {
   const [title, setTitle] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addCard({id, columnId, title}));
+    dispatch(addCard({columnId, title}));
     setTitle('');
   };
 
@@ -32,7 +32,6 @@ const CardForm = ({columnId, id}) => {
 
 CardForm.propTypes = {
   columnId: PropTypes.string,
-  id: PropTypes.string,
 };
 
 export default CardForm;

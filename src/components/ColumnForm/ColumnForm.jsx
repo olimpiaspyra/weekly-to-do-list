@@ -8,13 +8,13 @@ import {addColumn} from './../../redux/columnsReducer';
 
 import styles from './ColumnForm.module.scss';
 
-const ColumnForm = ({id, listId}) => {
+const ColumnForm = ({listId}) => {
   const [title, setTitle] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addColumn({id, listId, title}));
+    dispatch(addColumn({listId, title}));
     setTitle('');
   };
 
@@ -34,7 +34,6 @@ const ColumnForm = ({id, listId}) => {
 
 ColumnForm.propTypes = {
   listId: PropTypes.string,
-  id: PropTypes.string,
 };
 
 export default ColumnForm;
