@@ -15,8 +15,8 @@ function App() {
       <Container>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/favorite' element={<Favorite />} />
           <Route path='/list/:listId' element={<List />} />
+          <Route path='/favorite' element={<Favorite />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Container>

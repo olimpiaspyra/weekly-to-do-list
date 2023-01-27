@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
-import {useParams} from 'react-router-dom';
+import {useParams, Navigate} from 'react-router';
 
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
@@ -14,6 +14,8 @@ const List = () => {
   const {listId} = useParams();
   const listData = useSelector(state => getListsById(state, listId));
   const columns = useSelector(state => getColumnsById(state, listId));
+
+  if (!listData) return <Navigate to='/' />;
 
   return (
     <div className={styles.list}>

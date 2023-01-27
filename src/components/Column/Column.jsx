@@ -16,7 +16,7 @@ const Column = ({title, id}) => {
       <p className={styles.title}>{title}</p>
       <ul className={styles.cards}>
         {cards.map(card => (
-          <Card key={card.id} {...card} />
+          <Card key={card.id} title={card.title} id={card.id} />
         ))}
       </ul>
       <CardForm columnId={id} />

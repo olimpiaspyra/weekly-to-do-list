@@ -4,8 +4,10 @@ import initialState from './initialState';
 import columnsReducer from './columnsReducer';
 import cardsReducer from './cardsReducer';
 import listsReducer from './listsReducer';
+import searchReducer from './searchReducer';
 
 const subreducers = {
+  search: searchReducer,
   lists: listsReducer,
   columns: columnsReducer,
   cards: cardsReducer,

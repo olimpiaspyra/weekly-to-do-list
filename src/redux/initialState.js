@@ -32,6 +32,11 @@ const initialState = {
       listId: '3',
       title: 'Others',
     },
+    {
+      id: '4',
+      listId: '3',
+      title: 'Work',
+    },
   ],
   cards: [
     {
@@ -69,7 +74,13 @@ const initialState = {
       columnId: '2',
       title: 'Prepare CV',
     },
+    {
+      id: '7',
+      columnId: '4',
+      title: 'Prepare CV',
+    },
   ],
+  search: '',
 };
 
 export default initialState;

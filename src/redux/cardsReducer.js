@@ -1,8 +1,13 @@
 import shortid from 'shortid';
 
+import searchContains from '../utils/searchContains';
+
 // selectors
-export const getCardsById = ({cards}, columnId) =>
-  cards.filter(card => card.columnId === columnId);
+export const getCardsById = ({cards, search}, columnId) => {
+  return cards.filter(
+    card => card.columnId === columnId && searchContains(card.title, search)
+  );
+};
 
 // actions
 const createActionName = actionName => `app/cards/${actionName}`;
