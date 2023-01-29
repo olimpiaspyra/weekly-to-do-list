@@ -12,8 +12,7 @@ const IsImportantButton = ({cardId, isImportant}) => {
 
   const handleClick = e => {
     e.preventDefault();
-    const importantCard = cardId;
-    dispatch(toggleCardImportant(importantCard));
+    dispatch(toggleCardImportant(cardId));
   };
 
   return (

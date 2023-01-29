@@ -1,11 +1,10 @@
 @import '../../styles/settings.scss';
 
-.isImportantButton {
+.removeButton {
   background: none;
   border: 0;
   cursor: pointer;
   transition: all 0.5s;
-  margin: 0 10px 0 auto;
 
   &.transparent {
     background: transparent;
@@ -14,10 +13,4 @@
       color: darken($color-text-fields, 20%);
     }
   }
-}
-.isActive {
-  color: $color-important;
-}
-.inActive {
-  color: black;
 }

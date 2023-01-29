@@ -3,7 +3,8 @@ import shortid from 'shortid';
 //selectors
 export const getAllLists = ({lists}) => lists;
 
-export const getListsById = ({lists}, listId) => lists.find(list => list.id === listId);
+export const getListsById = ({lists}, listId) =>
+  lists.filter(list => list.id === listId);
 
 //actions
 const createActionName = actionName => `app/lists/${actionName}`;

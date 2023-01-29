@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import IsImportantButton from '../IsImportantButton/IsImportantButton';
+import RemoveButton from '../RemoveButton/RemoveButton';
 
 import styles from './Card.module.scss';
 
@@ -10,6 +11,7 @@ const Card = ({title, isImportant, cardId}) => {
     <li className={styles.card}>
       {title}
       <IsImportantButton cardId={cardId} isImportant={isImportant} />
+      <RemoveButton cardId={cardId} />
     </li>
   );
 };
