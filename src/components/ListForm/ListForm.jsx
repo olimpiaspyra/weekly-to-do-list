@@ -14,9 +14,14 @@ const ListForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addList({title, description}));
-    setTitle('');
-    setDescription('');
+    if (title.length === 0) {
+      alert('Input fields cannot be empty');
+      return;
+    } else {
+      dispatch(addList({title, description}));
+      setTitle('');
+      setDescription('');
+    }
   };
 
   return (

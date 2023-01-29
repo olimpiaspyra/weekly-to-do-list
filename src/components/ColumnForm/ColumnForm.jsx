@@ -14,8 +14,13 @@ const ColumnForm = ({listId}) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addColumn({listId, title}));
-    setTitle('');
+    if (title.length === 0) {
+      alert('Input fields cannot be empty');
+      return;
+    } else {
+      dispatch(addColumn({listId, title}));
+      setTitle('');
+    }
   };
 
   return (

@@ -21,9 +21,9 @@ const NavBar = () => {
         <li>
           <NavLink
             className={({isActive}) => (isActive ? styles.linkActive : undefined)}
-            to='/favorite'
+            to='/important'
           >
-            Favorite
+            Important
           </NavLink>
         </li>
       </ul>

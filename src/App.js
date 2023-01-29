@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import List from './components/List/List';
 import NavBar from './components/NavBar/NavBar';
 import NotFound from './components/NotFound/NotFound';
-import Favorite from './components/Favorite/Favorite';
+import Important from './components/Important/Important';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/list/:listId' element={<List />} />
-          <Route path='/favorite' element={<Favorite />} />
+          <Route path='/important' element={<Important />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Container>

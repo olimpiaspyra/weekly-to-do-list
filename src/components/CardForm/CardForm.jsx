@@ -14,8 +14,13 @@ const CardForm = ({columnId}) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addCard({columnId, title}));
-    setTitle('');
+    if (title.length === 0) {
+      alert('Input fields cannot be empty');
+      return;
+    } else {
+      dispatch(addCard({columnId, title}));
+      setTitle('');
+    }
   };
 
   return (

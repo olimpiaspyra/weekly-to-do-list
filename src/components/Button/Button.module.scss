@@ -19,10 +19,10 @@
   }
 
   &.danger {
-    background: $color-favorite;
+    background: $color-important;
 
     &:hover {
-      background: darken($color-favorite, 5%);
+      background: darken($color-important, 5%);
     }
   }
 }
