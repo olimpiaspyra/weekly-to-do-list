@@ -1,34 +1,20 @@
 @import '../../styles/settings.scss';
 
 .header {
-  display: grid;
-  place-content: center;
   background-color: $color-background;
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   font-weight: 900;
   text-transform: uppercase;
   color: $color-text-title;
   margin: 15px;
 }
 
-.header > h1 {
-  grid-area: 1/1/-1/-1;
-}
-.titleTop {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
-}
-.titleBottom {
-  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
-  color: transparent;
-  background: -webkit-linear-gradient(177deg, black 53%, $color-text-title 65%);
-  background: linear-gradient(177deg, black 53%, $color-text-title 65%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transform: translateX(-0.02em);
+.title {
+  text-shadow: -13px -1px 7px rgba(30, 39, 46, 1);
 }
 
 .background {
-  background-image: url('https://pixabay.com/get/g94f3ecb2e41cc2108ebf16cf535da56db613c7bc7618dfb52963a7235370d00864ef1d4110860f6f6c10631cd674902ede2782f86625adc5c3d8267467b4ee84fdb0d61e3123b89310ade1e0a0565353_1920.jpg');
+  background-image: url('https://images.pexels.com/photos/636237/pexels-photo-636237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +22,7 @@
   margin: 40px 0 40px 0;
   overflow: hidden;
   border-radius: 5px;
-  width: 1200px
+  width: 1200px;
 }
 
 @media (max-width: 767px) {
