@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 220px;
-  margin: 40px 0 40px 0;
+  margin: 40px 15px 40px 15px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -33,4 +33,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .background {
+    height: 150px;
+  }
 }
